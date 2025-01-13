@@ -19,13 +19,13 @@ spec:
   postgres_configuration_secret: awx-postgres-configuration
 
   postgres_data_volume_init: true
-  postgres_storage_class: awx-postgres-volume
+  postgres_storage_class: gp2
   postgres_storage_requirements:
     requests:
       storage: 8Gi
 
   projects_persistence: true
-  projects_existing_claim: awx-projects-claim
+  projects_existing_claim: awx-projects-claim-efs
 
   web_replicas: 1
   task_replicas: 1

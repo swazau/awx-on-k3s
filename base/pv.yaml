@@ -9,7 +9,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   capacity:
     storage: 8Gi
-  storageClassName: awx-postgres-volume
+  storageClassName: gp2
   hostPath:
     path: /data/postgres-15
 
@@ -24,6 +24,6 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   capacity:
     storage: 2Gi
-  storageClassName: awx-projects-volume
+  storageClassName: gp2
   hostPath:
     path: /data/projects

@@ -1,13 +1,12 @@
----
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: awx-projects-claim
+  name: awx-projects-claim-efs
+  namespace: awx
 spec:
   accessModes:
-    - ReadWriteOnce
-  volumeMode: Filesystem
+    - ReadWriteMany
+  storageClassName: efs-sc
   resources:
     requests:
-      storage: 2Gi
-  storageClassName: awx-projects-volume
+      storage: 10Gi
