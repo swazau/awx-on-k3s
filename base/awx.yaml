@@ -20,7 +20,7 @@ spec:
   postgres_configuration_secret: awx-postgres-configuration
 
   postgres_data_volume_init: true
-  postgres_storage_class: gp2
+  postgres_storage_class: gp3
   postgres_storage_requirements:
     requests:
       storage: 8Gi
