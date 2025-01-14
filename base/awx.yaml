@@ -12,6 +12,7 @@ spec:
   admin_password_secret: awx-admin-password
 
   ingress_type: ingress
+  ingress_class_name: nginx
   ingress_hosts:
     - hostname: awx.example.com
       tls_secret: awx-secret-tls
